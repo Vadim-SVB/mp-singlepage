@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модуль Панель</title>
+    <link type="image/x-icon" rel="shortcut icon" href="img/favicon_all_sizes.ico">
+    <link type="image/png" sizes="16x16" rel="icon" href="img/favicon_all_sizes.ico">
+    <link type="image/png" sizes="32x32" rel="icon" href="img/favicon_all_sizes.ico">
+    <link type="image/png" sizes="96x96" rel="icon" href="img/favicon_all_sizes.ico">
+    <link type="image/png" sizes="120x120" rel="icon" href="img/favicon_all_sizes.ico">
+    <link rel="apple-touch-icon" href="img/logoMP.png">
+    <link href="http://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        html { /* body won't work ¯\_(ツ)_/¯ */
+                scroll-snap-type: y mandatory;
+        }
+        section {
+            scroll-snap-align: start;
+        }
+        
+    </style>
+</head>
+<body class="relative">
+    <!-- Header -->
+
+    <nav class="z-50 fixed bg-gradient-to-b from-gray-800 bg-opacity-30 dark:bg-gray-800  lg:shadow ">
+            <div class="w-screen mx-auto sm:px-6">
+                <div class="flex items-center justify-between h-16 md:h-24 px-1">
+                    <div class=" flex items-center">
+                        <a class="flex-shrink-0" href="/">
+                            <img class="h-10 w-10  sm:h-12 sm:w-12 md:h-16 md:w-16" src="/img/logoModulePanel.svg" alt="Модуль Панель"/>
+                        </a>
+                        <div class="text-xs sm:text-base text-gray-50 uppercase flex flex-row md:flex-col">
+                            <span class="ml-1">Модуль</span>
+                            <span class="ml-1">Панель</span>
+                        </div>
+
+                    </div>
+                    
+                    <div class="hidden md:flex flex-row">
+                        <!-- hidden md: -->
+                        <!-- Links to Contacts -->
+                            <div class="ml-10 flex flex-col">
+                                <a class="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-0 rounded-md text-base tracking-wide font-medium" href="tel:+375447899978">
+                                    +375 44 789-99-78
+                                </a>
+                                <a class="text-gray-300 dark:text-white  hover:text-gray-800 dark:hover:text-white px-3 py-0 rounded-md text-sm font-medium" href="mailto:zoomvrum.vs@gmail.com">
+                                    zoomvrum.vs@gmail.com
+                                </a>
+                            </div>
+                        <!-- Translate Menu & Button -->
+                        <div class="ml-4 flex items-center md:ml-6">
+                            <div class="ml-3 relative">
+                                <div class="relative inline-block text-left">
+                                    <div>
+                                        <button type="button" class="  flex items-center justify-center w-full rounded-md  px-4 py-2 text-sm font-medium text-gray-300  dark:text-gray-50 hover:bg-gray-800 dark:hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-gray-500" id="options-menu">
+                                              RU
+                                        </button>
+                                    </div>
+                                    <div class="origin-top-right absolute right-0 mt-2 w-18 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
+                                        <div class="py-1 " role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                            
+                                            <a href="" class="block block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600" role="menuitem">
+                                                <span class="flex flex-col">
+                                                    <span>
+                                                        LT
+                                                    </span>
+                                                </span>
+                                            </a>
+                                            <a href="" class="block block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600" role="menuitem">
+                                                <span class="flex flex-col">
+                                                    <span>
+                                                        EN
+                                                    </span>
+                                                </span>
+                                            </a>
+                                            <a href="" class="block block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600" role="menuitem">
+                                                <span class="flex flex-col text-red-700">
+                                                    <span class="sm:hidden"> NO </span>
+                                                    <span class="hidden sm:block  md:hidden "> sm </span>
+                                                    <span class="hidden md:block lg:hidden  "> md </span>
+                                                    <span class="hidden lg:block  xl:hidden "> lg </span>
+                                                    <span class="hidden xl:block  2xl:hidden"> xl </span>
+                                                    <span class="hidden 2xl:block"> 2xl </span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Translate Menu & Button -->
+                    <div class="-mr-2 flex md:hidden">
+                        <button class="text-gray-400 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
+                            <svg width="20" height="20" fill="currentColor" class="h-8 w-8" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
+                        Home
+                    </a>
+                    <a class="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
+                        Gallery
+                    </a>
+                    <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
+                        Content
+                    </a>
+                    <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
+                        Contact
+                    </a>
+                </div>
+            </div> -->
+    </nav>
+ 
+
+    <!-- Section #1 HomePage -->
+    <section class="relative overflow-hidden h-screen">
+        <img src="/img/img_1.jpg" class="absolute h-full w-full object-cover backdrop-filter backdrop-brightness-0"/>
+        
+            <div class="bg-black bg-opacity-50 mx-auto px-6 flex flex-wrap content-center h-full relative py-16">
+                <div class="w-full sm:w-full lg:w-3/5 xl:w-8/12 flex items-center flex-col   lg:items-start relative">
+                    
+                    
+                    <h1 class="font-bebas-neue font-sans tracking-wide uppercase text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-black  flex  flex-col leading-none dark:text-white text-gray-200">
+                        Экологичные и недорогие  
+                        <span class="tracking-normal text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-8xl">
+                            Модульные дома
+                        </span>
+                    </h1>
+                    <p class="font-sans lg:tracking-wider text-base sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl text-gray-50 dark:text-white">
+                        из плит с невероятной теплоизоляцией
+                    </p>
+                    
+                </div>
+                <div class="w-full sm:w-full lg:w-2/5 xl:w-4/12 flex justify-center">
+                    <button class="px-6 py-3 w-40 mt-8 mb-8 lg:px-12 lg:py-7 lg:w-80 lg:mt-16 lg:mb-16 bg-black bg-opacity-20 font-light transition ease-in duration-200 hover:border-yellow-200 hover:text-yellow-200 border-4 text-xs lg:text-lg text-yellow-400 border-yellow-400  focus:outline-none">
+                        НАШИ ПРОЕКТЫ
+                    </button>
+                </div>
+
+                
+                <!-- MOUSE ICON Scroll -->
+                <div class="absolute  bottom-2 lg:bottom-12 left-0 right-0 h-20 text-gray-500 flex flex-col place-content-center place-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="hidden lg:block h-11 w-11 fill-current" viewBox="0 0 16 16">
+                        <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0v6zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg"  class=" h-6 w-6 fill-current animate-bounce" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                </div>
+        </div>
+    </section>
+    <!-- Section #2 HouseGalery -->
+    <section class=" relative overflow-hidden h-screen w-full">
+        <img src="/img/img_2.jpg" class="absolute h-screen w-full object-cover backdrop-filter backdrop-brightness-0"/>
+        <div class="bg-black bg-opacity-50 mx-auto px-6 flex flex-col flex-wrap content-center h-full relative py-16">
+            <!-- Header -->
+            <div class="uppercase text-3xl lg:text-7xl lg:pt-12 pb-0  flex justify-center justify-items-end leading-loose h-1/5 text-white">Модульные дома</div>
+            <!-- List of houses -->
+            <div class="flex flex-row w-full h-4/5 items-center">
+                <!-- Nav left -->
+                <div class="text-gray-300 w-1/12 lg:w-2/12 flex justify-center ">
+                    <div class="rounded-full h-6 w-6 sm:h-9 sm:w-9 lg:h-20  lg:w-20 pr-0.5 sm:pr-1 flex items-center justify-center border-2 border-gray-300 hover:border-yellow-200 hover:text-yellow-200 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg"  class="h-3 w-3 sm:h-5 sm:w-5 lg:h-11 lg:w-11  fill-current " viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="flex flex-col items-center text-white w-10/12 lg:w-8/12">
+                    <div class="text-xs lg:text-xl font-medium flex flex-row items-center justify-evenly w-full">
+                        <span class="w-24 text-center">жизненное пространство</span>
+                        <span class="w-24 text-center">53-59 <p>M<sup>2</sup></p></span>
+                    </div>
+                    <span class="text-2xl lg:text-5xl lg:text-7xl mt-5 mb-2.5 lg:mt-10 lg:mb-5">NAME OF HOUSE</span>
+                    <div class="text-base lg:text-2xl font-medium flex flex-row items-center justify-evenly w-full">
+                        <span class="w-24 text-center">цена</span>
+                        <span class="w-24 text-center">20.000 $</span>
+                    </div>
+                </div>
+                <!-- Nav right -->
+                <div class="text-gray-300 w-1/12 lg:w-2/12 flex justify-center ">
+                    <div class="rounded-full h-6 w-6 sm:h-9 sm:w-9 lg:h-20  lg:w-20 pl-0.5 sm:pl-1 flex items-center justify-center border-2 border-gray-300 hover:border-yellow-200 hover:text-yellow-200 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg"  class="h-3 w-3 sm:h-5 sm:w-5 lg:h-11 lg:w-11 fill-current" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 flex flex-row justify-center">
+            <button class="px-6 py-3 w-40 mt-4 mb-4 lg:mt-8 lg:mb-8 lg:px-12 lg:py-7 lg:w-80 lg:mt-16 lg:mb-16 bg-black bg-opacity-20 font-light uppercase transition ease-in duration-200 hover:border-yellow-200 hover:text-yellow-200 tracking-wider border-2 lg:border-4 text-xs lg:text-lg text-yellow-400 border-yellow-400  focus:outline-none">
+                Все проекты
+            </button>
+        </div>
+
+        </div>
+    </section>
+    <!-- Section #3 BenefitsPage -->
+    <section class="relative overflow-hidden h-screen w-full">
+        <img src="/img/img_1.jpg" class="absolute h-full w-full object-cover backdrop-filter backdrop-brightness-0"/>
+        <article class="bg-black bg-opacity-50 flex flex-col h-full w-full relative items-center">
+            <!-- Header -->
+            <header class="h-24  md:h-36 lg:h-40 w-12/12 flex flex-col pb-3 md:mb-10 lg:mb-10 justify-end content-center text-center md:text-xl lg:text-xl uppercase text-gray-100">
+                Почему стоит выбрать наш дом
+            </header>
+            <!-- List of benefits -->
+            <div class="flex flex-wrap justify-around px-4 w-12/12 xl:w-10/12 2xl:w-8/12 h-full items-start overflow-scroll text-xs md:text-base">
+                <div class="w-full md:w-6/12 lg:w-4/12 lg:pl-2 my-0.5">
+                    <header class="text-sm font-medium md:text-lg text-yellow-200">Безопастность</header>
+                    <span class="text-white leading-none">Наша компания делает ставку на надежные и безопастные строительные материалы</span>
+                </div>
+                <div class="w-full md:w-6/12 lg:w-4/12 lg:pl-2 my-0.5">
+                    <header class="text-sm font-medium md:text-lg text-yellow-200">Технологии</header>
+                    <span class="text-white leading-none">Модуль Панель использует самые современные производственные процессы при строительстве домов</span>
+                </div>
+                <div class="w-full md:w-6/12 lg:w-4/12 lg:pl-2 my-0.5">
+                    <header  class="text-sm font-medium md:text-lg text-yellow-200">Огнеустойчивость</header>
+                    <span class="text-white leading-none">Наши дома соответствуют современным противопожарным требованиям</span>
+                </div>
+
+                <div class="w-full md:w-6/12 lg:w-4/12 lg:pl-2 my-0.5">
+                    <header class="text-sm font-medium md:text-lg text-yellow-200">Быстрота возведения</header>
+                    <span class="text-white leading-none">Возведение дома занимает до 40 дней после возведения фундамента. Включая прокладку комуникаций</span>
+                </div>
+                <div class="w-full md:w-6/12 lg:w-4/12 lg:pl-2 my-0.5">
+                    <header class="text-sm font-medium md:text-lg text-yellow-200">Современная Архитектура</header>
+                    <span class="text-white leading-none">Вы получите современный дом выбрав из готовых вариантов в нашем катологе или предложите свой проект и мы сделаем для него плиты на заказ</span>
+                </div>
+                <div class="w-full md:w-6/12 lg:w-4/12 lg:pl-2 my-0.5">
+                    <header class="text-sm font-medium md:text-lg text-yellow-200">Внешний вид</header>
+                    <span class="text-white leading-none">Вы можете выбрать из множества цветов покраски фасада, вариат отделки вентфасадом либо деревом</span>
+                </div>
+                
+                <div class="w-full md:w-6/12 lg:w-4/12 lg:pl-2 my-0.5">
+                    <header class="text-sm font-medium md:text-lg text-yellow-200">Экологичность</header>
+                    <span class="text-white leading-none">Использование натуральных строительных материалов делает возможным экологически чистое строительство</span>
+                </div>
+                <div class="w-full md:w-6/12 lg:w-4/12 lg:pl-2 my-0.5">
+                    <header class="text-sm font-medium md:text-lg text-yellow-200">Минимум отделочных работ</header>
+                    <span class="text-white leading-none">Все наши плиты имеют поверхность готовую к финишной декоративной отделке</span>
+                </div>
+                <div class="w-full md:text-center lg:w-4/12 lg:text-left lg:pl-2 my-0.5">
+                    <header class="text-sm font-medium md:text-lg text-yellow-200">Теплоизоляция</header>
+                    <span class="text-white leading-none">Благодаря энергоэффективной конструкции мы гарантируем, что в вашем доме всегда будет тепло</span>
+                </div>
+        </div>
+
+        </article>
+    </section>
+    <!-- Section #4 PanelPage -->
+    <section class="bg-indigo-900 relative overflow-hidden h-screen">
+        <img src="/img/img_3.jpg" class="absolute h-full w-full object-cover backdrop-filter backdrop-brightness-0"/>
+        <!-- <img src="/img/panel-naruzh_.png" class="h-3/3 bg-local bg-clip-content"/> -->
+        <article class="h-full  py-0 px-4 flex flex-wrap relative bg-black bg-opacity-50 overflow-y-auto text-sm text-white break-words">
+            <div class="flex w-full h-1/5 justify-center items-end uppercase font-medium border border-blue-600">
+                <p>Tак устроены наши панели</p>
+            </div>
+            <div class="w-full h-2/5 flex justify-center items-center border border-indigo-600 relative">
+                    <img class="absolute left-3/4 -top-0.5  h-full " src="/img/panel-naruzh_.png" alt="панели">
+                    <img class="absolute left-2/4       h-full " src="/img/panel-vnutri.png" alt="панели">
+                    <img class="absolute left-1/4         h-full " src="/img/panel-naruzh.png" alt="панели">
+                
+                <button class="absolute w-52 h-10 transition ease-in duration-200 hover:border-yellow-200 hover:text-yellow-200 border-2 border-yellow-400 text-yellow-400 bg-black bg-opacity-50">Изучить строение панелей</button>
+            </div>
+            <div class="w-full h-2/5 flex flex-col justify-center justify-evenly items-center border border-purple-600">
+                <header class="text-sm text-yellow-200 ">
+                    Преимущества трехслойной технологии
+                </header>
+                <ul>
+                    <li>+ Идеальная геометрия и высочайшая прочность (выдерживает нагрузку свыше 10 этажей)</li>
+                    <li>+ Теплопотери дома сведены к нулю</li>
+                    <li>+ Отсутствие влияния человеческого фактора, быстрая и надёжная сборка</li>
+                    <li>+ Высокая пожарная безопастность</li>
+                    <li>+ Энергоэффективность А++</li>
+                </ul>
+            </div>
+        </article>
+        
+    </section>
+    <!-- Section #5 СontactPage -->
+    <section class="bg-indigo-900 relative overflow-hidden h-screen">
+        <img src="/img/img_1.jpg" class="absolute h-full w-full object-cover backdrop-filter backdrop-brightness-0"/>
+        <article class="h-full py-0 px-4 2xl:px-8 flex flex-col relative content-center bg-black bg-opacity-50 overflow-y-auto text-sm md:text-xl text-white break-words ">
+            <div class="h-1/5"></div>
+            <div class="h-2/5 md:h-3/5 flex flex-wrap flex-col justify-evenly">
+                <div class="h-full md:w-1/2 lg:w-3/5 text-base md:text-xl lg:text-2xl 2xl:text-3xl flex-grow flex flex-col pr-3 justify-center">
+                    <p class="mb-5 mt-5">Наша компания Модуль Панель является производителем модульных панелей, домокомплектов котеджей из утепленных железобетонных стеновых панелей. </p> 
+                    <p>Все элементы будущих котеджей изготавливаются в заводских условиях имеют ровную геометрию, а погодные условия не влияют на качество и скорость производства изделий.</p> 
+                    <p class="hidden md:block mb-5 mt-5">Дополнительные издержки сведены к минимуму, а значит Вы получите лучшую цену и превосходное качество</p> 
+                </div>
+                <form class="h-full md:w-1/2 lg:w-2/5 max-w-min hidden md:flex flex-col flex-grow-0 justify-between border border-yellow-200 bg-black bg-opacity-40 filter backdrop-filter backdrop-blur-lg filter drop-shadow-sm ">
+                    <button class="w-full h-16 sm:text-lg transition ease-in duration-200 hover:border-yellow-200 hover:text-yellow-200 border-b-2 border-yellow-200 text-yellow-200 bg-black bg-opacity-30">Расчет строительства</button>
+                    <input type="email" class="mx-3 bg-transparent border-b border-yellow-200 placeholder-yellow-400 placeholder-opacity-50 appearance-none focus:outline-none  focus:border-b focus:border-t " placeholder="Ваш Email">
+                    <input type="text" class="mx-3 bg-transparent border-b border-yellow-200 placeholder-yellow-400 placeholder-opacity-50  appearance-none" placeholder="Имя и Фамилия">
+                    <input type="tel" class="mx-3 bg-transparent border-b border-yellow-200 placeholder-yellow-400 placeholder-opacity-50   appearance-none" placeholder="Номер телефона">
+                    <div class="relative px-3  h-1/4 w-full" >
+                        <textarea class="h-full w-42 form-textarea bg-transparent border-b border-yellow-200 placeholder-yellow-400 placeholder-opacity-50 appearance-none" name="text-msg" id="text-msg" ></textarea>
+                        <label class="absolute bottom-1 left-3  text-yellow-400 text-opacity-50" for="text-msg">Текст сообщения:</label>
+                    </div>
+                    <button class="w-full h-16 sm:text-lg transition ease-in duration-200 hover:border-yellow-200 hover:text-yellow-200 border-t-2 border-yellow-200 text-yellow-200 bg-black bg-opacity-30">Отправить сообщение</button>
+                </form>
+                
+            </div>
+            <div class="h-2/5 md:h-1/5 flex flex-wrap">
+
+                    <div class="w-1/2 h-2/5 flex flex-col md:hidden items-center justify-center">
+                        <button class="w-11/12 h-2/3 sm:text-lg transition ease-in duration-200 hover:border-yellow-200 hover:text-yellow-200 border-2 border-yellow-400 text-yellow-400 bg-black bg-opacity-50">Написать сообщение</button>
+                    </div>
+                    <div class="w-1/2 h-2/5 flex flex-col md:hidden items-center justify-center">
+                        <button class="w-11/12 h-2/3 sm:text-lg transition ease-in duration-200 hover:border-yellow-200 hover:text-yellow-200 border-2 border-yellow-400 text-yellow-400 bg-black bg-opacity-50">Расчет строительства</button>
+                    </div>
+
+                    <footer class="w-full h-3/5 md:h-full text-sm flex flex-row items-center justify-center">
+                        <div class="w-3/5 lg:w-7/12 flex flex-col md:text-xl">
+                        <h3>ООО МОДУЛЬ ПАНЕЛЬ</h3>
+                        <address>220011 Минск, ул. Ольшевского, <br> дом 10, офис&nbsp;377</address>
+                        
+                        </div>
+                        <div class="w-2/5 lg:w-5/12 flex flex-col text-right lg:text-center">
+                            <a href="mailto:modulpanel@gmail.com" class="text-xs md:text-xl md:tracking-tight">modulpanel@gmail.com</a>
+                            <a href="tel:+375447899978" class="text-xs md:text-xl tracking-widest">+375(44) 78-999-78</a>
+                            <a href="tel:+375447855578" class="text-xs md:text-xl tracking-widest">+375(44) 78-555-78</a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            
+        </article>
+    </section>
+</body>
+</html>
