@@ -261,28 +261,24 @@
     <section class="bg-indigo-900 relative overflow-hidden h-screen">
         <img src="/img/img_3.jpg" class="absolute h-full w-full object-cover backdrop-filter backdrop-brightness-0"/>
         <!-- <img src="/img/panel-naruzh_.png" class="h-3/3 bg-local bg-clip-content"/> -->
-        <article class="h-full  py-0 px-4 flex flex-wrap relative bg-black bg-opacity-50 overflow-y-auto text-sm text-white break-words">
-            <div class="flex w-full h-1/5 justify-center items-end uppercase font-medium border border-blue-600">
-                <p>Tак устроены наши панели</p>
-            </div>
-            <div class="w-full h-2/5 flex justify-center items-center border border-indigo-600 relative">
-                    <img class="absolute left-3/4 -top-0.5  h-full " src="/img/panel-naruzh_.png" alt="панели">
-                    <img class="absolute left-2/4       h-full " src="/img/panel-vnutri.png" alt="панели">
-                    <img class="absolute left-1/4         h-full " src="/img/panel-naruzh.png" alt="панели">
-                
-                <button class="absolute w-52 h-10 transition ease-in duration-200 hover:border-yellow-200 hover:text-yellow-200 border-2 border-yellow-400 text-yellow-400 bg-black bg-opacity-50">Изучить строение панелей</button>
-            </div>
-            <div class="w-full h-2/5 flex flex-col justify-center justify-evenly items-center border border-purple-600">
-                <header class="text-sm text-yellow-200 ">
-                    Преимущества трехслойной технологии
-                </header>
-                <ul>
-                    <li>+ Идеальная геометрия и высочайшая прочность (выдерживает нагрузку свыше 10 этажей)</li>
-                    <li>+ Теплопотери дома сведены к нулю</li>
-                    <li>+ Отсутствие влияния человеческого фактора, быстрая и надёжная сборка</li>
-                    <li>+ Высокая пожарная безопастность</li>
-                    <li>+ Энергоэффективность А++</li>
+        <article class="h-full  py-0 px-4 flex flex-col lg:flex-row lg:flex-row-reverse flex-wrap relative bg-black bg-opacity-50 overflow-y-auto text-sm text-white break-words bg-gradient-to-t from-gray-900 via-transparent to-transparent overflow-hidden">
+            
+            <div class=" h-2/3 w-full lg:w-2/3 lg:h-full  flex flex-col items-start justify-between pt-24 border-l-2 border-yellow-400">
+                <ul class=" py-4   z-10 text-sm sm:text-lg md:text-xl lg:text-2xl">
+                    <li class="py-10 px-5 text-sm sm:text-lg md:text-xl lg:text-2xl border-r-2 border-t-2 border-b-2 border-yellow-400 uppercase font-medium text-center bg-black">Преимущества трехслойной технологии</li>
+                    <li class="px-2 py-2 ml-5 mt-5 w-full bg-gradient-to-r from-gray-900 bg-opacity-80">Идеальная геометрия и высочайшая прочность <br> (выдерживает нагрузку свыше 10 этажей)</li>
+                    <li class="px-2 py-2 ml-5 w-full bg-gradient-to-r from-gray-900 bg-opacity-80">Теплопотери дома сведены к нулю</li>
+                    <li class="px-2 py-2 ml-5 w-full bg-gradient-to-r from-gray-900 bg-opacity-80">Отсутствие влияния человеческого фактора, <br> быстрая и надёжная сборка</li>
+                    <li class="px-2 py-2 ml-5 w-full bg-gradient-to-r from-gray-900 bg-opacity-80">Высокая пожарная безопастность</li>
+                    <li class="px-2 py-2 ml-5 w-full bg-gradient-to-r from-gray-900 bg-opacity-80">Энергоэффективность А++</li>
                 </ul>
+
+                <button class="max-w-min px-5 py-3 mb-20 z-10  uppercase text-lg md:text-2xl hidden lg:block transition ease-in duration-200 hover:border-yellow-200 hover:text-yellow-200 border-2 border-yellow-400 text-yellow-400 bg-black bg-opacity-80">Изучить&nbsp;строение&nbsp;панелей</button>
+            </div>
+            <!-- PANEL IMG -->
+            <div class="h-1/3 w-full lg:w-1/3 lg:h-full lg:border-r-2 lg:border-b-8 lg:border-yellow-400 flex items-center justify-center ">
+                <img class="absolute bottom-0 -left-5" src="/img/panel_sectional_view/@2x.png" alt="">
+                <button class="max-w-min px-5 py-3 z-10 uppercase text-lg md:text-2xl lg:hidden transition ease-in duration-200 hover:border-yellow-200 hover:text-yellow-200 border-2 border-yellow-400 text-yellow-400 bg-black bg-opacity-80">Изучить&nbsp;строение&nbsp;панелей</button>
             </div>
         </article>
         
