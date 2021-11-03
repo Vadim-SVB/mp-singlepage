@@ -428,26 +428,38 @@
     </section>
     <!-- Current Progect -->
     <section class="relative overflow-x-hidden h-screen" style="background-color: rgb(49, 49, 49);">
-        <article class="flex w-full h-full flex-wrap bg-gray-500 px-8">
-                <header class="flex w-3/5 h-1/5 items-end justify-around  bg-yellow-400">
-                    <h2 class="cursor-pointer">интерьер</h2>
-                    <h2 class="cursor-pointer">экстерьер</h2>
+        <article class="flex w-full h-full flex-wrap px-8">
+                <div class="hidden lg:w-1/5"></div>
+                <header class="flex w-2/5 h-1/5 items-end justify-around text-white text-xl uppercase pb-5 ">
+                    <h2 class="cursor-pointer  border-b-2 border-gray-100">интерьер</h2>
+                    <h2 class="cursor-pointer ">экстерьер</h2>
                 </header>
-                <section class="flex relative w-full h-4/5 bg-gray-900">
+                <section class="flex relative w-full h-4/5 flex-wrap">
+                    <div class="hidden lg:w-1/5 "></div>
                     <!-- main img and slider -->
-                    <article class="flex flex-wrap w-3/5 h-full bg-gray-800">
+                    <article class="flex flex-wrap content-start mb-1 w-3/5 lg:w-2/5 h-full">
                         <figure class="w-full h-2/3">
-                            <img class="w-full h-full object-none md:object-scale-down lg:object-none" src="./img/img_7.jpg" alt="main image of the house" />
+                            <img class="w-full h-full " src="./img/img_7.jpg" alt="main image of the house" />
                         </figure>
-                        <figure class=" w-1/5 h-1/3 pt-3 border border-yellow-400"></figure>
-                        <figure class=" w-1/5 h-1/3 border border-yellow-400">x</figure>
-                        <figure class=" w-1/5 h-1/3 border border-yellow-400">xx</figure>
-                        <figure class=" w-1/5 h-1/3 border border-yellow-400">xxx</figure>
-                        <figure class=" w-1/5 h-1/3 border border-yellow-400">xxxx</figure>
+                        <figure class=" w-1/5 h-1/5 ">
+                            <img class="w-full h-full pr-2 pt-2 object-cover" src="./img/house_preview/cam-1-158x110.jpg" alt="main image of the house" />
+                        </figure>
+                        <figure class=" w-1/5 h-1/5 ">
+                            <img class="w-full h-full pr-2 pt-2 object-cover" src="./img/house_preview/cam-2-176x110.jpg" alt="main image of the house" />
+                        </figure>
+                        <figure class=" w-1/5 h-1/5 ">
+                            <img class="w-full h-full pr-2 pt-2 object-cover" src="./img/house_preview/cam-3-176x110.jpg" alt="main image of the house" />
+                        </figure>
+                        <figure class=" w-1/5 h-1/5 ">
+                            <img class="w-full h-full pr-2 pt-2 object-cover" src="./img/house_preview/cam-4-176x110.jpg" alt="main image of the house" />
+                        </figure>
+                        <figure class=" w-1/5 h-1/5 ">
+                            <img class="w-full h-full pt-2 object-cover" src="./img/house_preview/cam-3-SHUCO-176x110.jpg" alt="main image of the house" />
+                        </figure>
 
                     </article>
                     <!-- house parametrs -->
-                    <article class="w-2/5 pl-16 h-full bg-gray-700 text-white">
+                    <article class="w-2/5 pl-16 h-full text-white">
                         <header class="text-4xl font-semibold uppercase leading-8 mb-2">NAMEOFHOUSE One</header>
                         <section class="max-w-sm">
                             <header class="uppercase mb-5 mt-5 text-xl">Детали</header>
@@ -486,6 +498,43 @@
                                 Написать нам
                             </div>
                         </section>
+                    </article>
+                    <article class="w-full">
+                        <ul class="w-full">
+<!-- строительство -->
+                            <li class="flex w-full h-10 text-center items-center text-white border-l-4 border-yellow-400 uppercase" >
+                                <span class="w-3/5 h-10 pt-2 text-left pl-3" style="background-color: rgb(56, 57, 66);">СТРОИТЕЛЬСТВО</span>
+                                <span class="w-1/5 h-10 pt-2 ml-2 border border-yellow-400" style="background-color: rgb(56, 57, 66);">СТАНДАРТ</span>
+                                <span class="w-1/5 h-10 pt-2 ml-2" style="background-color: rgb(56, 57, 66);">ПОД КЛЮЧ</span>
+                            </li>
+
+                            <li class="flex w-full h-10 mt-2 text-center items-center text-white">
+                                <span class="w-3/5 h-10 pt-2 text-left pl-3" style="background-color: rgb(56, 57, 66);">Наружные стены (U ≤ 0,2) с фасадной облицовкой</span>
+                                <span class="w-1/5 h-10 pt-3 ml-2 text-2xl leading-3 text-yellow-300" style="background-color: rgb(56, 57, 66);">+</span>
+                                <span class="w-1/5 h-10 pt-3 ml-2 text-2xl leading-3 text-yellow-300" style="background-color: rgb(56, 57, 66);">+</span>
+                            </li>
+                            <li class="flex w-full h-10 mt-2 text-center items-center text-white">
+                                <span class="w-3/5 h-10 pt-2 text-left pl-3" style="background-color: rgb(56, 57, 66);">Внутренние стены</span>
+                                <span class="w-1/5 h-10 pt-3 ml-2 text-2xl leading-3 text-yellow-300" style="background-color: rgb(56, 57, 66);">+</span>
+                                <span class="w-1/5 h-10 pt-3 ml-2 text-2xl leading-3 text-yellow-300" style="background-color: rgb(56, 57, 66);">+</span>
+                            </li>
+                            <li class="flex w-full h-10 mt-2 text-center items-center text-white">
+                                <span class="w-3/5 h-10 pt-2 text-left pl-3" style="background-color: rgb(56, 57, 66);">Плоская, двускатная или односкатная крыша (U ≤ 0,2)</span>
+                                <span class="w-1/5 h-10 pt-3 ml-2 text-2xl leading-3 text-yellow-300" style="background-color: rgb(56, 57, 66);">+</span>
+                                <span class="w-1/5 h-10 pt-3 ml-2 text-2xl leading-3 text-yellow-300" style="background-color: rgb(56, 57, 66);">+</span>
+                            </li>
+                            <li class="flex w-full h-10 mt-2 text-center items-center text-white">
+                                <span class="w-3/5 h-10 pt-2 text-left pl-3" style="background-color: rgb(56, 57, 66);">Стеклянные двери из ПВХ *</span>
+                                <span class="w-1/5 h-10 pt-3 ml-2 text-2xl leading-3 text-yellow-300" style="background-color: rgb(56, 57, 66);">+</span>
+                                <span class="w-1/5 h-10 pt-3 ml-2 text-2xl leading-3 text-yellow-300" style="background-color: rgb(56, 57, 66);">+</span>
+                            </li>
+<!-- Электричество и монтаж -->
+                            <li class="flex w-full h-10 mt-4 text-center items-center text-white border-l-4 border-yellow-400 uppercase" >
+                                <span class="w-3/5 h-10 pt-2 text-left pl-3" style="background-color: rgb(56, 57, 66);">Электричество и монтаж</span>
+                                <span class="w-1/5 h-10 pt-2 ml-2 border border-yellow-400" style="background-color: rgb(56, 57, 66);">СТАНДАРТ</span>
+                                <span class="w-1/5 h-10 pt-2 ml-2 " style="background-color: rgb(56, 57, 66);">ПОД КЛЮЧ</span>
+                            </li>
+                        </ul>
                     </article>
                 </section>
         </article>
