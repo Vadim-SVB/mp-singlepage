@@ -1,4 +1,5 @@
 <template>
+
   <div class="ml-4 flex items-center md:ml-6">
     <div class="ml-3 relative">
       <div class="relative inline-block text-left">
@@ -24,10 +25,12 @@
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
 <script>
+
 import ScreenSize from './Helpers/ScreenSize.vue'
 export default {
   name: "ChengeLocale",
@@ -61,4 +64,5 @@ export default {
     }
   }
 };
+
 </script>

@@ -1,4 +1,5 @@
 {
+
   "message": "EN",
   "site_name":{ "first":"Module", "second":"Panel"},
   "main_page":{
@@ -63,4 +64,5 @@
     "plus_5":"High fire safety",
     "plus_6":"Energy Efficiency A++"
   }
+
 }

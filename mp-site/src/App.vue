@@ -1,4 +1,5 @@
 <template>
+
 <div>
   <Navigation />
   <HomePage />
@@ -21,6 +22,7 @@ import ContactPage from './components/Pages/ContactPage.vue';
 export default {
   name: 'App',
   components: {
+
     // HelloI18n,
     Navigation,
     HomePage,
