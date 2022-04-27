@@ -1,3 +1,66 @@
 {
-  "message": "LT i18n !!"
+  "message": "LT",
+  "site_name":{ "first":"Modulio", "second":"Skydelis"},
+  "main_page":{
+    "slogan":{ "first":"ekologiškas ir pigus", "second":"moduliniai namai", "third":"iš plokščių su neįtikėtina šilumos izoliacija "},
+    "btn_projects":"Mūsų projektai"
+  },
+  "hause_galery":{
+    "title":"Moduliniai namai",
+    "btn_all_projects":"Visi projektai",
+    "living_space":"gyvenamoji erdvė",
+    "price":"kaina "
+  },
+  "benefits":{
+    "title":"KODĖL RINKTIS MŪSŲ NAMAS",
+    "options":{
+      "opt_0":{
+        "title":"Patikimumas",
+        "story":"Mūsų įmonė remiasi patikimomis ir saugiomis statybinėmis medžiagomis"
+      },
+      "opt_1":{
+        "title":"Technologijos",
+        "story":"Skydinis modulis naudoja moderniausius gamybos procesus namų statyboje"
+      },
+      "opt_2":{
+        "title":"Atsparumas ugniai",
+        "story":"Mūsų namai atitinka šiuolaikinius priešgaisrinės saugos reikalavimus"
+      },
+      "opt_3":{
+        "title":"Erekcijos greitis",
+        "story":"Namo pastatymas užtrunka iki 40 dienų po pamatų pastatymo. Įskaitant komunikacijų tiesimą"
+      },
+      "opt_4":{
+        "title":"Šiuolaikinė architektūra",
+        "story":"Modernų namą gausite pasirinkę iš gatavų variantų mūsų kataloge arba pasiūlydami savo projektą ir mes pagaminsime jam pagal užsakymą pagamintas plokštes"
+      },
+      "opt_5":{
+        "title":"Išvaizda",
+        "story":"Galima rinktis iš įvairių fasado dažymo spalvų, apdailos variantą ventiliuojamu fasadu ar medžiu"
+      },
+      "opt_6":{
+        "title":"Ekologiškumas",
+        "story":"Natūralių statybinių medžiagų naudojimas leidžia tvariai statyti"
+      },
+      "opt_7":{
+        "title":"Minimalūs apdailos darbai",
+        "story":"Visos mūsų plokštės turi paviršių, paruoštą dekoratyvinei apdailai"
+      },
+      "opt_8":{
+        "title":"Šilumos izoliacija",
+        "story":"Energiją taupančio dizaino dėka užtikriname, kad jūsų namuose visada būtų šilta"
+      }
+    }
+  },
+  "panel":{
+    "title":"Trijų sluoksnių technologijos privalumai",
+    "btn_panel_info":"Sužinokite daugiau",
+    "plus_0":"Tobula geometrija ir didžiausias stiprumas",
+    "plus_1":"atlaiko apkrovas virš 10 aukštų",
+    "plus_2":"Namo šilumos nuostoliai sumažinami iki nulio",
+    "plus_3":"Jokio žmogiškojo faktoriaus įtakos gamybai",
+    "plus_4":"Greitas ir patikimas surinkimas",
+    "plus_5":"Aukšta priešgaisrinė sauga",
+    "plus_6":"Energijos vartojimo efektyvumas A++"
+  }
 }

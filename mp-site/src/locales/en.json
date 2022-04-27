@@ -1,3 +1,66 @@
 {
-  "message": "EN i18n !!"
+  "message": "EN",
+  "site_name":{ "first":"Module", "second":"Panel"},
+  "main_page":{
+    "slogan":{ "first":"ECO-FRIENDLY AND CHEAP", "second":"MODULAR HOUSES", "third":"from plates with incredible thermal insulation"},
+    "btn_projects":"Our projects"
+  },
+  "hause_galery":{
+    "title":"Modular houses",
+    "btn_all_projects":"All projects",
+    "living_space":"living space",
+    "price":"price "
+  },
+  "benefits":{
+    "title":"WHY CHOOSE OUR HOUSES",
+    "options":{
+      "opt_0":{
+        "title":"Reliability",
+        "story":"Our company relies on reliable and safe building materials"
+      },
+      "opt_1":{
+        "title":"Technologies",
+        "story":"Panel module uses the most modern manufacturing processes in the construction of houses"
+      },
+      "opt_2":{
+        "title":"Fire resistance",
+        "story":"Our houses comply with modern fire safety requirements"
+      },
+      "opt_3":{
+        "title":"Speed ​​of erection",
+        "story":"The erection of the house takes up to 40 days after the construction of the foundation. Including laying communications"
+      },
+      "opt_4":{
+        "title":"Modern architecture",
+        "story":"You will receive a modern house by choosing from ready-made options in our catalog or offer your project and we will make custom-made slabs for it"
+      },
+      "opt_5":{
+        "title":"Appearance",
+        "story":"You can choose from a variety of colors for painting the facade, a variant of finishing with a ventilated facade or wood"
+      },
+      "opt_6":{
+        "title":"Environmental friendliness",
+        "story":"The use of natural building materials makes sustainable building possible"
+      },
+      "opt_7":{
+        "title":"Minimum finishing work",
+        "story":"All our slabs have a surface ready for decorative finishing"
+      },
+      "opt_8":{
+        "title":"Thermal insulation",
+        "story":"With an energy-efficient design, we ensure that your home is always warm"
+      }
+    }
+  },
+  "panel":{
+    "title":"Advantages of three-layer technology",
+    "btn_panel_info":"Learn more",
+    "plus_0":"Perfect geometry and highest strength",
+    "plus_1":"withstands loads over 10 floors",
+    "plus_2":"The heat loss of the house is reduced to zero",
+    "plus_3":"No influence of the human factor in production",
+    "plus_4":"Fast and reliable assembly",
+    "plus_5":"High fire safety",
+    "plus_6":"Energy Efficiency A++"
+  }
 }

@@ -10,14 +10,13 @@
     <link type="image/png" sizes="32x32" rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link type="image/png" sizes="96x96" rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link type="image/png" sizes="120x120" rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <style>
+      /* body won't work ¯\_(ツ)_/¯ */
+      html { scroll-snap-type: y mandatory;}
+      section { scroll-snap-align: start; }
+    </style>
     <link rel="apple-touch-icon" href="<%= BASE_URL %>logoMP.png">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+  <body class="relative" id="app"></body>
 </html>

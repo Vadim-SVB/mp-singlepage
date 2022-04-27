@@ -1,25 +1,33 @@
 <template>
-  <HelloI18n />
+<div>
+  <Navigation />
+  <HomePage />
+  <HouseGalery />
+  <BenefitsPage />
+  <PanelPage />
+  <ContactPage />
+</div>
 </template>
 
 <script>
-import HelloI18n from './components/HelloI18n.vue'
+// import HelloI18n from './components/HelloI18n.vue'
+import Navigation from './components/Header/Navigation.vue';
+import HomePage from './components/Pages/HomePage.vue';
+import HouseGalery from './components/Pages/HouseGalery.vue';
+import BenefitsPage from './components/Pages/BenefitsPage.vue';
+import PanelPage from './components/Pages/PanelPage.vue';
+import ContactPage from './components/Pages/ContactPage.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloI18n
+    // HelloI18n,
+    Navigation,
+    HomePage,
+    HouseGalery,
+    BenefitsPage,
+    PanelPage,
+    ContactPage,
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
